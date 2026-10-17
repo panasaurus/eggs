@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panasaurus Eggs</title>
+<meta name="description" content="Search and download server eggs for the Panasaurus panel — games, applications and generic runtimes, all built on ghcr.io/panasaurus/images.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c8a5a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='bold' fill='%23fff' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">panasaurus<span>/eggs</span></a>
+    <nav>
+      <a href="https://github.com/panasaurus/images">Images</a>
+      <a href="https://github.com/panasaurus/docs">Docs</a>
+      <a href="https://discord.gg/tszvW9zKN7">Discord</a>
+      <a href="https://github.com/panasaurus/eggs">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Eggs</h1>
+  <p class="lede">
+    Server definitions for the Panasaurus panel. Every egg runs on images from
+    <code>ghcr.io/panasaurus/images</code>. Import a JSON from the panel
+    (admin area &rarr; Nests &rarr; import) or download it here and import the file.
+  </p>
+
+  <input id="q" type="search" placeholder="Search eggs — try &ldquo;minecraft&rdquo;, &ldquo;valheim&rdquo; or an image tag like java_21" autocomplete="off" spellcheck="false" aria-label="Search eggs">
+  <div id="cats" class="cats" role="group" aria-label="Filter by category"></div>
+  <p id="status" class="status" role="status"></p>
+  <ul id="list" class="eggs"></ul>
+  <p id="empty" class="empty" hidden></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Panasaurus Eggs is MIT licensed and reworks the ptero-eggs game, application and generic
+    collections by the Pterodactyl team, Michael Parker and contributors &mdash; author credits
+    are kept inside every egg file.</p>
+    <p><a href="https://panasaurus.com">panasaurus.com</a> &middot;
+       <a href="https://github.com/panasaurus">GitHub</a> &middot;
+       <a href="https://github.com/panasaurus/eggs">eggs</a> &middot;
+       <a href="https://github.com/panasaurus/images">images</a> &middot;
+       <a href="https://discord.gg/tszvW9zKN7">Discord</a></p>
+  </div>
+</footer>
+
+<noscript><p class="wrap" style="color:#59636e">This list needs JavaScript. Browse the eggs directly on
+<a href="https://github.com/panasaurus/eggs">GitHub</a>.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
